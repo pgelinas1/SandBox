@@ -1,0 +1,11 @@
+node{
+    stage('Create file') {
+        sh 'touch testLab6.txt'
+    }
+    stage('Write') {
+        sh 'echo "Bonjour" > testLab6.txt'
+    }
+    stage('Print') {
+        sh 'cat testLab6.txt'
+    }
+}
