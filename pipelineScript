@@ -1,11 +1,14 @@
 node{
     stage('Create file') {
         sh 'touch testLab6.txt'
+        mail bcc: '', body: 'this step worked', cc: '', from: '', replyTo: '', subject: 'work', to: 'pierre.gelinas@oracle.com'
     }
     stage('Write') {
         sh 'echo "Bonjour" > testLab6.txt'
+        mail bcc: '', body: 'this step worked', cc: '', from: '', replyTo: '', subject: 'work', to: 'pierre.gelinas@oracle.com'
     }
     stage('Print') {
         sh 'cat testLab6.txt'
+        mail bcc: '', body: 'this step worked', cc: '', from: '', replyTo: '', subject: 'work', to: 'pierre.gelinas@oracle.com'
     }
 }
